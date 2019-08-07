@@ -3,13 +3,19 @@ $(function(){
 
     $('.menu-container__mini').on('click','', function(event){
         event.preventDefault(); 
-
+ let pagePos = $(window).scrollTop();
+ let pos = parseInt($('body').attr('data-scroll'), 10);
         var menu = $(this).next();
         if(menu.is(':visible')){
             menu.css({
                 'display': 'none',
             });
-           
+          $('html').css({
+                'position': 'relative',
+                'overflow': 'visible'
+            });
+
+            
         }
         else {
             menu.css({
@@ -17,9 +23,18 @@ $(function(){
               
             });
           
-
+        $('html').css({
+                    'position': 'static',
+                    'overflow': 'hidden'
+                });
+                
         }
     });
+
+
+
+
+
 
     $('.header-container__btn--mini ,.popup__close ,  .top-section__btn , .my-skills__btn , .my-project__btn ').on('click','', function(event){
         event.preventDefault();
