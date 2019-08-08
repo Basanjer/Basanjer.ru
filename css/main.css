@@ -52,7 +52,6 @@
 html {
     line-height: 1.15;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body {
@@ -68,7 +67,7 @@ body {
 }
 
 .fixed-container {
-    max-width: 1210px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -83,6 +82,11 @@ body {
     height: 1px!important;
     padding: 0!important;
     border: 0!important;
+}
+
+.is-menu-open {
+ 
+    overflow: hidden;
 }
 
 .header-container {
@@ -110,9 +114,9 @@ body {
 }
 
 .menu-container__mini--line {
-    width: 45px;
-    height: 6px;
-    margin: 4px auto;
+    width: 30px;
+    height: 5px;
+    margin: 2px auto;
     -webkit-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
     -o-transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
     transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
@@ -128,22 +132,20 @@ body {
 
 .header-container__menu--item {
     display: inline-block;
-    margin-right: 28px;
+    margin-right: 35px;
     line-height: 25px;
     max-width: 100px;
+}
+
+.header-container__menu--link:hover {
+    color: #fc557c;
+    text-decoration: underline;
 }
 
 .header-container__menu--link {
     text-decoration: none;
     color: #1f1f24;
-    transition: background 1s ease;
 }
-
-.header-container__menu--link:hover {
-     color: #fc557c;
-     text-decoration: underline;
-
- }
 
 .header-container__contacts {
     display: -webkit-box;
@@ -180,9 +182,8 @@ body {
 .header-container__btn--link {
     text-decoration: none;
     color: #f53f4f;
-    padding: 12px 40px;
+    padding: 13px 50px;
     border: 1px solid #f53f4f;
-    transition: background 1s ease;
 }
 
 .header-container__btn--link:hover {
@@ -223,7 +224,7 @@ body {
 }
 
 .top-section__text {
-    margin-top: 52px;
+    margin-top: 55px;
 }
 
 .top-section__text > span{
@@ -253,11 +254,10 @@ body {
 
 .top-section__btn {
     color: #fff;
-    padding: 19px 77px;
+    padding: 23px 70px;
     background-color: #ff4e2e;
     border: 1px solid #ff4e2e;
     text-decoration: none;
-    transition: background 1s ease;
 }
 
 .top-section__btn:hover {
@@ -268,8 +268,8 @@ body {
 
 .top-section__right-container {
     position: absolute;
-    right: -485px;
-    bottom: 10px;
+    right: -450px;
+    bottom: 0;
     width: 920px;
     height: 637px;
     background-image: url(../Images/Ellipse.svg);
@@ -316,8 +316,8 @@ body {
 
 .top-section__tag-div-top {
     font-size: 29px;
-    top: 25px;
-    right: 690px;
+    top: 30px;
+    right: 700px;
     -webkit-transition: top 1s,left 1s;
     transition: top 1s,left 1s;
     -webkit-transform: rotate(-15deg);
@@ -338,8 +338,8 @@ body {
 
 .top-section__tag-div-bottom {
     font-size: 35px;
-    top: 400px;
-    right: 508px;
+    top: 420px;
+    right: 500px;
     -webkit-transition: top 1.5s,left 1.5s;
     transition: top 1.5s,left 1.5s;
     -webkit-transform: rotate(20deg);
@@ -368,8 +368,8 @@ body {
 
 .top-section__tag-slash {
     font-size: 38px;
-    top: 530px;
-    left: 3px;
+    top: 550px;
+    left: 0;
     -webkit-transition: top .5s,left .5s;
     transition: top .5s,left .5s;
     -webkit-transform: rotate(-20deg);
@@ -388,20 +388,20 @@ body {
 
 .top-section__tag-lattice {
     font-size: 55px;
-    top: 224px;
-    left: -130px;
+    top: 200px;
+    left: -100px;
     -webkit-transition: top 1.7s,left 1.7s;
     transition: top 1.7s,left 1.7s;
     -webkit-transform: rotate(20deg);
-    transform: rotate(18deg);
+    transform: rotate(20deg);
 
 
 }
 
 .top-section__tag-curlyBraces {
-    font-size: 46px;
-    top: -6px;
-    left: -243px;
+    font-size: 43px;
+    top: 10px;
+    left: -200px;
     -webkit-transition: top .8s,left .8s;
     transition: top .8s,left .8s;
     -webkit-transform: rotate(30deg);
@@ -410,7 +410,7 @@ body {
 }
 
 .my-skills {
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 .my-skills__title {
@@ -489,7 +489,7 @@ body {
 }
 
 .my-skills__btn-block {
-    margin-top: 110px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -499,7 +499,6 @@ body {
     background-color: #ff4e2e;
     border: 1px solid #ff4e2e;
     text-decoration: none;
-    transition: background 1s ease;
 }
 
 .my-skills__btn:hover {
@@ -509,7 +508,7 @@ body {
 }
 
 .price {
-    padding: 70px 0;
+    padding: 85px 0;
     color: #fff;
     background-color: #ff8f5a;
     background-image: -webkit-linear-gradient(77deg, #ff8f5a 0, #ff2f96 99%, #ff2f96 100%);
@@ -609,7 +608,7 @@ body {
 
 
 .my-project {
-    padding: 100px 0 125px;
+    padding: 100px 0 100px;
 }
 
 .my-project__container {
@@ -622,7 +621,7 @@ body {
     font-size: 54px;
     font-weight: 700;
     line-height: 59.73px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 
 .my-project__list {
@@ -667,7 +666,7 @@ body {
 
 
 .my-project__btn-block {
-    margin-top: 90px;
+    margin-top: 100px;
     text-align: center;
 }
 
@@ -677,7 +676,6 @@ body {
     background-color: #ff4e2e;
     border: 1px solid #ff4e2e;
     text-decoration: none;
-    transition: background 1s ease;
 }
 
 .my-project__btn:hover {
@@ -726,7 +724,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 80px 0 75px;
+    padding: 60px 0;
 }
 
 .footer__nav {
@@ -757,12 +755,7 @@ body {
 
 .footer__contacts {
     list-style: none;
-    margin-left: 95px;
-
-}
-
-.footer__contacts li {
-    margin-bottom: 10px;
+    margin-right: 15px;
 }
 
 .footer__contacts--number {
@@ -770,7 +763,7 @@ body {
     color: #000000;
     font-size: 25px;
     font-weight: 700;
-    line-height: 34.73px;
+    line-height: 59.73px;
 }
 
 .footer-contacts--email {
@@ -782,7 +775,7 @@ body {
 }
 
 .footer__social {
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .icon-mail-alt,
@@ -823,11 +816,11 @@ body {
 .social-link__facebook {
     width: 35px;
     height: 30px;
-    background-position: -50px 0;
+    background-position: -58px 0;
 }
 
 .social-link__facebook:hover {
-    background-position: -50px -50px;
+    background-position: -59px -50px;
 }
 
 .social-link__twitter {
@@ -857,11 +850,10 @@ body {
 .footer__btn {
     display: inline-block;
     max-width: 300px;
-    padding: 13px 60px;
+    padding: 15px 60px;
     color: #ff4e2e;
     border: 1px solid #ff4e2e;
     text-decoration: none;
-    transition: background 1s ease;
 }
 
 .footer__btn:hover {
@@ -900,7 +892,6 @@ body {
 .popup__container {
     width: 400px;
     max-height: 600px;
-    height: 100%;
     margin: 10% auto;
     padding: 50px;
     display: flex;
@@ -920,7 +911,6 @@ body {
 
 }
 
-
 .popup__input {
     border-radius: 30px;
     height: 35px;
@@ -928,7 +918,6 @@ body {
     outline: none;
     border: 1px solid #ff4e2e;
     margin: 10px 0;
-    padding:  0 10px;
 }
 
 .popup__close{
@@ -951,39 +940,6 @@ body {
     text-decoration: none;
 }
 
-.lSSlideOuter .lSPager.lSpg {
-    margin: 10px 0 0 30px;
-    padding: 0;
-    text-align: center;
-
-
-}
-.lSSlideOuter .lSPager.lSpg > li {
-    cursor: pointer;
-    display: inline-block;
-    padding: 0 5px;
-
-}
-
-.lSSlideOuter .lSPager.lSpg > li a {
-    background-color: lightgrey;
-    border-radius: 30px;
-    display: inline-block;
-    height: 20px !important;
-    overflow: hidden;
-    text-indent: -999em;
-    width: 20px !important;
-    position: relative;
-    z-index: 99;
-    -webkit-transition: all 0.5s linear 0s;
-    transition: all 0.5s linear 0s;
-}
-
-.is-menu-open {
-    position: fixed;
-    overflow: hidden;
-}
-
 @media screen and (max-width: 1200px) {
     .lSAction , .lSPager {
         display: block;
@@ -992,61 +948,25 @@ body {
     .left-arrow , .right-arrow {
         display: none;
     }
-
-
-}
-
-@media screen and (max-width: 1200px) and (min-width: 1023px) {
-    .my-project__item--image {
-        width: 95%;
-    }
 }
 
 @media screen and (max-width: 1024px) {
-    .lSSlideOuter .lSPager.lSpg > li {
-        cursor: pointer;
-        display: inline-block;
-        padding: 0 5px;
-        margin-top: 1%;
+
+    .header-container__menu--list {
+        background-color: #fff;
+        border: 1px solid  #ff4e2e;
+        padding: 25px 25px 15px;
+        z-index: 10;
     }
 
-    .header-container__tel {
-        margin-right: 35px;
-        margin-top: 10px;
-    }
-    .header-container__btn {
-        margin-top: 10px;
-    }
-
-    .top-section__container {
-        padding: 0 35px;
+    .header-container__menu--item {
+        margin-bottom: 15px;
     }
 
     .price__tag-div {
         font-size: 23px;
         right: 45%;
         bottom: -20%;
-    }
-
-    .top-section__text {
-        margin-top: 62px;
-    }
-
-    .top-section__my-profession {
-        line-height: 32px;
-    }
-
-    .top-section__btn {
-        padding: 23px 103px;
-    }
-
-    .top-section__btn-block {
-        margin-top: 70px;
-    }
-
-    .top-section__foto {
-        bottom: 5px;
-        left: -2px;
     }
 
     .price__tag-slash {
@@ -1056,8 +976,6 @@ body {
         bottom: -20%;
         left: auto;
     }
-
-
 
     .price__tag-curlyBraces-top {
         font-size: 29px;
@@ -1073,8 +991,8 @@ body {
     }
 
     .top-section__tag-div-top {
-        top: 10px;
-        right: 42px;
+        top: 30px;
+        right: 50px;
     }
 
     .top-section__tag-div-bottom {
@@ -1082,17 +1000,17 @@ body {
     }
 
     .top-section__tag-slash {
-        top: 445px;
-        left: 350px;
+        top: 400px;
+        left: 300px;
     }
 
     .top-section__tag-slash-1024{
         display: block;
         font-size: 45px;
-        top: 90px;
-        left: 410px;
+        top: 50px;
+        left: 400px;
         -webkit-transform: rotate(20deg);
-        transform: rotate(15deg);
+        transform: rotate(20deg);
     }
 
     .top-section__tag-slash-1024::before {
@@ -1103,13 +1021,13 @@ body {
     }
 
     .top-section__tag-lattice {
-        top: 490px;
-        left: 45px;
+        top: 500px;
+        left: 30px;
     }
 
     .top-section__tag-curlyBraces {
-        top: 15px;
-        left: 70px;
+        top: 10px;
+        left: 40px;
     }
 
     .my-skills__list {
@@ -1126,7 +1044,6 @@ body {
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        margin-left: 27px;
     }
     .header-container__menu {
         display: none;
@@ -1136,82 +1053,12 @@ body {
         top: 80px;
         left: 30px;
     }
-
-    .header-container__btn--link {
-        margin-right: 12px;
-    }
     .header-container__menu--item {
         display: block;
     }
     .top-section__right-container {
         background-position: 0 120px;
         background-size: 80% 95%;
-    }
-
-    .my-skills__title {
-        margin-right: 40px;
-    }
-
-    .skills-container {
-        padding-right: 110px;
-        padding-left: 140px;
-    }
-
-    .my-skills__btn {
-        padding: 24px 92px;
-    }
-
-    .my-skills__btn-block {
-        margin-top: 135px;
-    }
-
-    .my-project__btn-block {
-        margin-top: 125px;
-    }
-
-    .my-project__btn {
-        padding: 24px 95px;
-        margin-left: 15px;
-    }
-
-
-    .footer__container {
-
-        padding: 105px 0 60px ;
-    }
-
-    .footer__nav--list {
-        margin-top: 5px;
-    }
-    .footer__nav--item {
-        margin-bottom: 13px;
-    }
-    .footer__nav {
-        margin-left: 27px;
-    }
-    .footer__contacts {
-        list-style: none;
-        margin-left: 55px;
-    }
-    .footer__social {
-        padding-right: 10px;
-    }
-    .footer__contacts li {
-        margin-bottom: 15px;
-    }
-
-    .header-container__menu--list {
-    z-index: 10;
-    background-color: #FFF;
-    border: 1px solid #ff4e2e;
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 25px 25px 10px;
-    }
-
-    .header-container__menu--item {
-    margin-bottom: 15px;
-    font-size: 18px;
     }
 }
 
@@ -1234,11 +1081,6 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-
-    .header-container__menu--list {
-    margin-left: 0;   
-    }
-
     .top-section__tag-div-bottom {
         top: 100px;
         left: 750px;
@@ -1308,10 +1150,6 @@ body {
     .top-section__btn-block {
         text-align: center;
     }
-
-    .my-skills__btn {
-        padding: 20px 70px;
-    }
     .price__title {
         font-size: 36px;
         font-weight: 700;
@@ -1343,25 +1181,6 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-
-    .top-section__container {
-        padding: 0;
-    }
-
-    .skills-container {
-       padding: 0;
-    }
-
-    .footer__container > * {
-        padding: 0;
-        margin: 0;
-    }
-
-
-    .my-project__btn {
-        padding: 20px 70px;
-        margin: 0;
-    }
     .price__tag-curlyBraces-top, .price__tag-slash, .price__tag-div {
         display: none;
     }
@@ -1599,22 +1418,6 @@ body {
     .header-tel {
         margin: 18px;
     }
-
-    .header-container {
-        padding: 10px 0;
-    }
-
-    .menu-container__mini {
-        margin-left: 13px;
-        margin-top: 10px;
-    }
-
-    .menu-container__mini--line {
-        width: 24px;
-        height: 3px;
-        margin: 0px auto;
-    }
-
     .header-container__tel--link {
         font-size: 18px;
         font-weight: 500;
@@ -1625,21 +1428,10 @@ body {
         margin-top: 8px;
     }
 
-    .top-section {
-    margin-top: 30px;
-	}
-	.top-section__text-block {
-    padding-top: 5px;
-	}
-
     .top-section__my-name {
         font-size: 30px;
         line-height: 55.64px;
     }
-
-    .top-section__btn-block {
-    margin-top: 40px;
-	}
 
     .top-section__btn {
         padding: 17px 82px;
@@ -1657,84 +1449,26 @@ body {
         padding-top: 70px;
     }
 
-    .my-skills__title {
-    margin-right: 0px;
-    line-height: 38px;
-	}
-
-.my-skills__item-info1 , .my-skills__item-info2 ,.my-skills__item-info3 ,.my-skills__item-info4 {
-    padding-top: 70px;
-    background-size: 60px 60px;
-}
-
     .my-skills__list {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .my-skills__item {
-        margin-bottom: 35px;
+        margin-bottom: 50px;
     }
     .my-skills__btn-block {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .my-project__title {
         font-size: 30px;
         padding: 0 20px;
         line-height: 35.64px;
-        margin-top: 35px;
-    	margin-bottom: 46px;
     }
 
     .price {
-        padding: 40px 20px;
+        padding: 55px 20px;
     }
-
-    .lSSlideOuter .lSPager.lSpg > li a {
-     height: 8px;
-     width: 8px;
-    
-	}
-
-	.my-project__btn {
-    padding: 15px 75px;
-    margin: 0;
-	}
-	.my-project__btn-block {
-    margin-top: 75px;
-	}
-
-	.my-project {
-    padding: 0px 0 65px;
-	}
-	.footer__container {
-    padding: 40px 20px 45px;
-	}
-	.footer__nav--list {
-    
-    margin-bottom: 35px;
-	}
-
-	.footer__contacts li {
-    margin-bottom: 0px;
-	}
-
-	.icon-mail-alt, .icon-phone {
-    font-size: 15px;
-	}
-
-	.footer__btn {
-    
-    padding: 17px 76px;
-    color: #fff;
-    background-color: #ff4e2e;
-    border: 1px solid #ff4e2e;
-    
-	}
-
-.footer__social--list {
-    margin-top: 55px;
-}
 
 }
 

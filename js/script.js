@@ -6,7 +6,7 @@ $(document).ready(function() {
         pause: 3000,
         responsive : [
             {
-                breakpoint: 1024,
+                breakpoint: 1180,
                 settings: {
                     item: 2,
                     slideMove: 1,
