@@ -9,9 +9,7 @@ $(function(){
             menu.css({
                 'display': 'none',
             });
-            $('html').css({
-                'overflow' : 'visible',
-            });
+          
            
         }
         else {
@@ -19,14 +17,10 @@ $(function(){
                 'display': 'inline-block',
               
             });
-
-             $('html').css({
-                'overflow' : 'hidden',
-            });
-          
-
         }
     });
+
+   
 
     $('.header-container__btn--mini ,.popup__close ,  .top-section__btn , .my-skills__btn , .my-project__btn ').on('click','', function(event){
         event.preventDefault();
